@@ -1,0 +1,52 @@
+<!doctype html>
+{% extends 'base.html' %}
+
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../static/public/css/style.css" />
+    <link rel="stylesheet" href="{%static '../../public/css/bootstrap.min.css' %}" >
+  </head>
+  <body>
+  {% block content %}
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+
+      <th scope="col">Mail</th>
+      <th scope="col">ID</th>
+      <th scope="col">Date de naissance</th>
+      <th scope="col">Lieu de naissance</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for query_result in query_results %}
+    <tr>
+
+      <td>{{query_result.mail_etudiant}}</td>
+      <td>{{query_result.id}}</td>
+      <td>{{query_result.date_de_naissance}}</td>
+      <td>{{query_result.lieu_de_naissance}}</td>
+    </tr>
+
+
+  </tbody>
+   {% endfor %}
+</table>
+  <div>
+    <br><br><br><br><br><br><br><br>
+    <br>
+    <br>
+    <br>
+  </div>
+
+  {% endblock %}
+  </body>
+</html>

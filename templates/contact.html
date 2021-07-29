@@ -1,0 +1,134 @@
+<!doctype html>
+{% load static i18n %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="static/public/css/style.css" />
+    <link rel="stylesheet" href="{%static 'public/css/bootstrap.min.css' %}" >
+    </head>
+    <body>
+    
+      {% include 'navabar.html' %}
+    
+
+
+{% block content %}
+
+<!--/Card image-->
+
+  <div class="contact" style="background-color: darkorange; color: white;height:25%;border-radius: 5px;width:97%;">
+    <h3>Contact</h3>
+
+  </div>
+   <div class="col-md-9">
+                <ul class="list">
+                    <li>Mail : ept@ept.sn</li>
+                    <li>Postale : BP A10 Thiés,Sénegal</li>
+                    <li>Télephone:00221 33 951 15 48</li>
+                    <li>Fax : 00221 33 951 14 76</li>
+                </ul>
+            </div>
+            <div class="contact" style="background-color: darkorange; color: white;height:25%;border-radius: 5px;width:97%;">
+    <h3>Acces</h3>
+
+  </div>
+  <div>
+    L’EPT est située à dans la région de Thiès (environ 70 km de Dakar, Sénégal), sur un terrain de plus de 400 hectares. Son campus comporte des locaux d’enseignement pédagogiques et de recherche, d’administration, d’exploitation, et d’hébergement à l’usage des étudiants et d’une partie du personnel.
+  </div>
+  <div class="contact" style="background-color: darkorange; color: white;height:25%;border-radius: 5px;width:97%;">
+    <h3>Localisation</h3>
+      </div> 
+      <div>
+        Itineraire depuis Leopold Sedar Senghor
+      </div> 
+      <div class="row">
+        <div class="card-body card-body-cascade text-center col-md-9">
+  
+          <!--Google map-->
+          <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.6096213007468!2d-16.938049085157502!3d14.79100518968146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1be4e9cad100d%3A0x2e6a43d5321f3f97!2sEcole%20Polytechnique%20de%20Thi%C3%A8s!5e0!3m2!1sfr!2ssn!4v1625477194158!5m2!1sfr!2ssn" frameborder="0"
+            frameborder="0" style="border:0; float: left;" allowfullscreen width="50%" height="150%"></iframe>
+          </div>
+        </div>
+        <div >
+          <div id='map_canvas' style='width: 300px;float: left; height: 520px;position:absolute;'></div>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Adresse</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ville/Region">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">BP</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Boite Postale">
+  </div>
+ 
+  <button type="submit" >Rechercher</button>
+</form>
+      </div>
+          
+  <br>
+  <br>
+        </div>
+        <!--/.Card content-->
+  
+      <!--/.Card-->
+  
+    
+    <!--Grid column-->
+  
+    <!--Grid column-->
+    <div class="col-md-6 mb-6" style="margin-top: 3%;">
+  
+      <!--Card-->
+    
+  
+        <!--Card image-->
+     
+            <div class="container">
+
+                <div id="login-row" class="row justify-content-center align-items-center">
+
+     
+                    </div>
+                </div>
+            </div>
+      
+        <!--/.Card content-->
+  
+      </div>
+      <!--/.Card-->
+  
+  
+    <!--Grid column-->
+  
+  </div>
+  <!--Grid row-->
+  <!--Grid row-->
+
+
+{% endblock content %}
+
+{% block footer %}
+  {%include 'footer.html' %}
+{% endblock footer %}
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'public/js/jquery.min.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="{% static 'public/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'public/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'public/js/bootstrap.min.js' %}"></script>
+
+
+  </body>
+  
+
+</html>

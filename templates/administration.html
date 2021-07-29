@@ -1,0 +1,40 @@
+<!doctype html>
+{% extends 'base.html' %}
+{% load static i18n %}
+{% block content %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../static/public/css/style.css">
+    <link rel="stylesheet" href="{%static 'public/css/bootstrap.min.css' %}">
+
+
+    <title> {% block title %}  Bienvenue dans le site officiel de l'EPT! {% endblock title %}</title>
+    <style>
+
+
+  </style>
+  </head>
+  <body>
+<div class="jumbotron">
+  <h1 class="display-4">Bonjour!</h1>
+  <p class="lead">Bienvenue dans la page administration du site</p>
+  <hr class="my-4">
+  <a class="btn  btn-lg" style="background-color:darkorange;" href="#" role="button">En savoir plus!</a>
+</div>
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="../../static/ept_background.png" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">L'ecole polytechnique de Thies est une ecole d'excellence qui forme des ingenieurs.</p>
+  </div>
+</div>
+  </body>
+</html>
+{% endblock content %}
